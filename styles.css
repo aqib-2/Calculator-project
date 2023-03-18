@@ -1,0 +1,71 @@
+:root{
+    --b-color:rgba(255,255,255, 0.3);
+}
+    body{
+    background-image: url(bg.jpg);
+}
+.container{
+    max-width: 400px;
+    margin:10vh auto 0 auto;
+    
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#display{
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    padding: 16px;
+    font-size: 25px;
+}
+.working{
+    display: grid;
+    border-bottom: 1px solid var(--b-color);
+    border-left: 1px solid var(--b-color);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.working:nth-last-child(-n + 4){
+    border-bottom: none;
+}
+.working div{
+    border-top: 1px solid var(--b-color);
+}
+.button{
+    border: 0.5px solid var(--b-color);
+    border-right: none;
+    line-height: 100px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+.button:nth-last-child(-n + 4){
+    border-bottom: none;
+}
+#equal{
+    background-color: rgba(0, 0, 100, 0.6);
+    color: white;
+}
+.button:hover{
+    background-color: black;
+    color: white;
+    transition: 0.2s ease-in-out;
+}
+#equal:active{
+    background-color: grey;
+}
+@media screen  and (max-width:480px){
+    .container{
+        max-width: 90%;
+        margin: 20vh auto 0 auto;
+    }
+    #display{
+        height: 40px;
+        line-height: 30px;
+        padding: 10px;
+        font-size: 19px;
+    }
+    .button{
+        line-height: 40px;
+        font-size: 13px;
+    }
+    
+}
