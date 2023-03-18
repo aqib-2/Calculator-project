@@ -26,6 +26,8 @@
 .working:nth-last-child(-n + 4){
     border-bottom: none;
 }
+
+    
 .working div{
     border-top: 1px solid var(--b-color);
 }
