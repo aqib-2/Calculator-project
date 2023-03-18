@@ -36,7 +36,6 @@
     text-align: center;
     font-size: 25px;
     cursor: pointer;
-    background-color:transparent;
 }
 .button:nth-last-child(-n + 4){
     border-bottom: none;
